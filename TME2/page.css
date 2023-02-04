@@ -7,13 +7,17 @@ header{
     display: flex;
     background: #0086B3;
     color: #fff;
-    padding: 50px;
+    padding: 10px;
+    justify-content: space-between;
 }
 
 #logo{
+    display: flex;
+    justify-content: left;
     background-image: url("insta.png");
-    background-size: 10% 10%;
-    width: 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100px;
     height: 100px;
 }
 
@@ -22,19 +26,15 @@ header{
     justify-content: center;
     align-items: center;
     width: 50%;
-
 }
 
-img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-#connect{
-    width: 50%;
+/*#connect{
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
     background-color: green;
 }
+*/
 main{
     display: flex;
     width: 100%;
@@ -46,8 +46,8 @@ main{
 aside{
     width: 20%;
     height: 600px;
-    background-color: #111112;
-    color: #fff;
+    background-color: #2698c5b7;
+    color: #000000;
 }
 
 section{

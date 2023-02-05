@@ -1,22 +1,73 @@
-<!DOCTYPE <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>PAGE PRINCIPAL</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" type = "text/css" href="page.css" />
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="" async defer></script>
+        <header>
+            <div id="logo"></div>
+            <div id="recherche">
+                <form action="" method="post"></form>
+                        <input type="text" name="search" id="search" placeholder="recherche de ratio"/>
+                    <div>
+                        <div>
+                            <input type="checkbox" name="check" id="check" />
+                            <label for="check">Contacts seulement</label>   
+                        </div>
+                        <button name="search" type="submit">Rechercher</button>
+                    </div>
+                </form>
+            </div>
+            <div id="connect">
+                <a id ="connexion" href="connexion.html">Connexion</a>
+                <a id="enregistrement" href="enregistrement.html">Enregistrement</a>
+            </div>
+        </header>
+        <main>
+            <aside>
+            </aside>
+            <section>
+                <div id="new_comment">
+                    <form action="" method="post">
+                        <label for="commentaire">Nouveau commentaire</label>
+                        <textarea name="commentaire" id="commentaire" cols="50" rows="5" maxlength="90"></textarea>
+                        <button name="nv_com" type="submit">Envoyer</button>
+                        <button name="nv_com" type="reset">Annuler</button>
+                    </form>
+                </div>
+                    <article>
+                        <div class="comment">
+                            <p class="content">CR7>MESSI</p>
+                            <p class="date">Créé le 01/01/2023</p>
+                            <p class="owner">
+                                Publié par Amir
+                                <button class="add-contact-btn">+</button>
+                            </p>
+                        </div>
+                        <div class="comment">
+                            <p class="content">Salut mec</p>
+                            <p class="date">Créé le 02/01/2023</p>
+                            <p class="owner">
+                                Publié par Saad
+                                <button class="add-contact-btn">+</button>
+                            </p>
+                        </div>
+                        <div class="comment">
+                            <p class="content">Messi the GOAT</p>
+                            <p class="date">Créé le 03/01/2023</p>
+                            <p class="owner">
+                                Publié par Saad
+                                <button class="add-contact-btn">+</button>
+                            </p>
+                        </div>
+                    </article>
+            </section>
+            
+        </main>
     </body>
 </html>

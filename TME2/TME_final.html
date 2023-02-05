@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -11,14 +12,19 @@
         <header>
             <div id="logo"></div>
             <div id="recherche">
-                    <label for="recherche">Recherche</label>
-                    <input type="text" name="recherche" id="recherche"/>
-                    <button type="submit">Rechercher</button>
-                    <input type="checkbox" name="check" id="check" />
-                    <label for="check">Contacts seulement</label>
+                <form action="" method="post"></form>
+                        <input type="text" name="search" id="search" placeholder="recherche de ratio"/>
+                    <div>
+                        <div>
+                            <input type="checkbox" name="check" id="check" />
+                            <label for="check">Contacts seulement</label>   
+                        </div>
+                        <button name="search" type="submit">Rechercher</button>
+                    </div>
+                </form>
             </div>
             <div id="connect">
-                <a id ="connect" href="connexion.html">Connexion</a>
+                <a id ="connexion" href="connexion.html">Connexion</a>
                 <a id="enregistrement" href="enregistrement.html">Enregistrement</a>
             </div>
         </header>
@@ -29,12 +35,25 @@
                 <div id="new_comment">
                     <form action="" method="post">
                         <label for="commentaire">Nouveau commentaire</label>
-                        <textarea name="commentaire" id="commentaire" cols="30" rows="5" maxlength="90"></textarea>
-                        <button type="submit">Envoyer</button>
-                        <button type="reset">Annuler</button>
+                        <textarea name="commentaire" id="commentaire" cols="50" rows="5" maxlength="90"></textarea>
+                        <button name="nv_com" type="submit">Envoyer</button>
+                        <button name="nv_com" type="reset">Annuler</button>
                     </form>
                 </div>
-                    <article></article>
+                    <article>
+                        <div class="comment">
+                            <p class="content">CR7>MESSI</p>
+                            <p class="date">Créé le 01/01/2023</p>
+                            <p class="owner">Publié par Amir</p>
+                            <button class="add-contact-btn">+</button>
+                          </div>
+                          <div class="comment">
+                            <p class="content">Salut mec</p>
+                            <p class="date">Créé le 02/01/2023</p>
+                            <p class="owner">Propriétaire : Saad</p>
+                            <button class="add-contact-btn">+</button>
+                          </div>
+                    </article>
             </section>
             
         </main>

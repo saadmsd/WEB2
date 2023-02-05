@@ -1,6 +1,11 @@
 body{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
 }
 
 header{
@@ -11,30 +16,60 @@ header{
     justify-content: space-between;
 }
 
-#logo{
-    display: flex;
-    justify-content: left;
-    background-image: url("insta.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 100px;
-    height: 100px;
-}
+    #logo{
+        background-image: url("ratio.jpeg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 180px;
+        height: 100px;
+        border-radius: 15%;
+    }
 
-#recherche{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-}
+    #recherche{
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-direction: column;
+        width: 25%;
+        height: 100px;
+    }
+        #recherche input[type="text"]{
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+            margin: 3px;
+        }
+        #recherche div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
 
-/*#connect{
-    display: flex;
-    justify-content: right;
-    align-items: flex-start;
-    background-color: green;
-}
-*/
+        }
+        #recherche button{
+            background-color: #bfec0d;
+            color: #0092bb;
+            border: none;
+            border-radius: 5px;
+            width: 100px;
+            margin: 1px;
+        }
+    #connect{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #connexion{
+        background-color: rgba(231, 255, 146, 0.422);
+        color: #000000;
+    }
+
+    #enregistrement{
+        background-color: rgba(255, 202, 110, 0.408);
+        color: #000000;
+    }
+
 main{
     display: flex;
     width: 100%;
@@ -43,32 +78,81 @@ main{
     background-color: bisque;
 }
 
-aside{
-    width: 20%;
-    height: 600px;
-    background-color: #2698c5b7;
-    color: #000000;
-}
+    aside{
+        width: 20%;
+        height: 600px;
+        background-color: #2698c5b7;
+        color: #000000;
+    }
 
-section{
-    display: flex;
-    background-color: #16dc30;
-    color: #fff;
-    width: 80%;
-    flex-direction: column;
+    section{
+        display: flex;
+        background-color: #b9ffc2;
+        color: #fff;
+        width: 80%;
+        flex-direction: column;
 
-}
+    }
 
-article{
-    display: flex;
-    background-color: #cd1577;
-    color: #fff;
-    height: 450px;
-}
+        #new_comment{
+            display: flex;
+            background-color: #00fffb3d;
+            color: #1b004e;
+            height: 150px;
+            margin: 15px;
+        }
+        #new_comment textarea{
+            flex: 1;
+            resize: none;
+        }
+        #new_comment button{
+            background-color: #0092bb;
+            color: #bfec0d;
+            border: none;
+            border-radius: 5px;
+            width: 100px;
+            margin: 1px;
+        }
+        #new_comment form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: stretch;
+            width: 100%;
+            height: 100%;
+        }
 
-#new_comment{
-    display: flex;
-    background-color: #bfec0d;
-    color: #fff;
-    height: 150px;
-}
+    article{
+        display: flex;
+        background-color: #cd1577;
+        color: #fff;
+        height: 450px;
+        flex-direction: column;
+    }
+
+        .comment {
+            border: 1px solid lightgray;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+            
+        .content {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+            
+        .date {
+            font-size: 0.9rem;
+            color: gray;
+            margin-bottom: 5px;
+        }
+            
+        .owner {
+            font-size: 0.9rem;
+            color: gray;
+            margin-bottom: 5px;
+        }
+            
+        .add-contact-btn {
+            float: right;
+        }

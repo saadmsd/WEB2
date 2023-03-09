@@ -18,7 +18,7 @@ try{
 let obj = {prop1: 1, prop2: 2, prop3: 4};
 
 function f(obj){
-    obj2 = Object.create(obj);
+    let obj2 = Object.create(obj);
     for (let i in obj){
         if (obj[i] % 2 == 0){
             obj2[i] = obj[i] + " est pair";
